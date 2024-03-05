@@ -1,8 +1,7 @@
 FROM node:18-alpine
 
 # Remove image first if exists specifically name image
-# docker rmi -f nest-demo:latest
-
+docker rmi -f nest-demo:latest
 
 # Set the working directory
 WORKDIR ./
