@@ -5,13 +5,13 @@ FROM node:18-alpine
 
 
 # Set the working directory
-WORKDIR /
+WORKDIR ./
 
 # Copy 
-COPY package.json .
-COPY package-lock.json .
-COPY dist/ .
-COPY node_modules/ .
+COPY package.json ./
+COPY package-lock.json ./
+COPY dist/ ./dist
+COPY node_modules/ ./
 
 # Install dependencies
 RUN npm install --production
