@@ -10,10 +10,10 @@ COPY dist/ ./dist
 COPY node_modules/ ./
 
 # Install dependencies
-RUN npm install --production
+RUN npm install
 
 # Expose the port
 EXPOSE 3000
 
 # Start the application
-CMD ["npm", "run","start:prod"]
+CMD ["npm", "run","start"]
